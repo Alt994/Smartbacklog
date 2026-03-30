@@ -1,0 +1,13 @@
+// taskPriority.js
+function suggestTaskPriority(deadlineDays, difficulty) {
+    if (deadlineDays <= 2 || difficulty === "hard") {
+        return "High Priority";
+    } else if (deadlineDays <= 5) {
+        return "Medium Priority";
+    } else {
+        return "Low Priority";
+    }
+}
+
+// Export si tu utilises des modules
+export { suggestTaskPriority };
